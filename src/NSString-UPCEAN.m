@@ -38,10 +38,10 @@
      */
     char		*tmp = (char *)[[self swapHandedness] lossyCString];
     NSMutableString	*ret = [NSMutableString stringWithString:@""];
-    int			i;
+    size_t			i;
 
-    for (i = strlen(tmp)-1; i >= 0; i--)
-        [ret appendString:[NSString stringWithFormat:@"%c", tmp[i]]];
+    for (i = strlen(tmp); i > 0; i--)
+        [ret appendString:[NSString stringWithFormat:@"%c", tmp[i-1]]];
 
     return ret;
 }

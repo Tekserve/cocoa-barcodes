@@ -78,13 +78,14 @@
     NSMutableString *newNum = [NSMutableString stringWithString:@""];
     char 	*code = (char *)[[self content] lossyCString], *productString;
     NSNumber	*product;
-    int 	i, productSum=0;
+    size_t  i;
+    int     productSum=0;
 
     // Starting from the units position, create a new number with all of
     // the odd position digits in their original sequence.
 
-    for (i = strlen(code)-1; i >=0; i-=2)
-        [newNum appendString:[NSString stringWithFormat:@"%c", code[i]]];
+    for (i = strlen(code); i > 0; i-=2)
+        [newNum appendString:[NSString stringWithFormat:@"%c", code[i-1]]];
 
     // Multiply this new number by 2
     product = [NSNumber numberWithInt:[newNum intValue] * 2];
@@ -95,8 +96,8 @@
         productSum += (productString[i] - '0');
 
    //  Add all of the digits not used in step one to the result in step three.
-    for (i = strlen(code -2); i >=0; i-=2)
-        productSum += (code[i] - '0');
+    for (i = strlen(code) - 2; i > 0; i-=2)
+        productSum += (code[i-1] - '0');
 
     // Determine the smallest number which when added to the result in step four
     // will result in a multiple of 10. This is the check character

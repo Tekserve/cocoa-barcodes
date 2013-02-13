@@ -196,7 +196,7 @@
 
         // Draw the main caption under the barcode
 		if ((nil != caption) && (NO == [caption isEqualToString:@""])) {
-			unsigned int cCount,captionLength;
+			NSUInteger cCount,captionLength;
 			NSRange range;
 			float container;
 			NSArray *captions = [caption componentsSeparatedByString:@"\t"];

@@ -100,7 +100,8 @@
 {
 	int     oddSum = 0;
 	int     evenSum = 0;
-	int        i, checkInt;
+	size_t        i;
+    int     checkInt;
 	int     even = 1;
 	//char *    code = (char *) [content lossyCString];
 	char *    code = (char *) [content cString];
