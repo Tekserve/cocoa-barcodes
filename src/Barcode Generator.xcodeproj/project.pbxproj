@@ -115,6 +115,7 @@
 		3F59A02716CC083700BB1F33 /* JapanPostBarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FC424B904B8F52000FFB3A7 /* JapanPostBarcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F59A02816CC083700BB1F33 /* NSImage-NKDBarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = F54A6EC80289797601CCF398 /* NSImage-NKDBarcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F59A02916CC083700BB1F33 /* NSImage-Resolution.h in Headers */ = {isa = PBXBuildFile; fileRef = F58AA587029CAE590149E780 /* NSImage-Resolution.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F59A07F16CC1AF700BB1F33 /* BarcodeFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3F599FEA16CC078000BB1F33 /* BarcodeFramework.framework */; };
 		3F59A08316CC1C9400BB1F33 /* BarcodeFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F599FF516CC078000BB1F33 /* BarcodeFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F59A08616CC1D6A00BB1F33 /* NKDAbstractUPCEANBarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = F510E79702977D4C01464B60 /* NKDAbstractUPCEANBarcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F59A08716CC1D8C00BB1F33 /* NSString-UPCEAN.h in Headers */ = {isa = PBXBuildFile; fileRef = F5E0C63002A680460127B8B4 /* NSString-UPCEAN.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -165,6 +166,19 @@
 		F5E0C63102A680460127B8B4 /* NSString-UPCEAN.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E0C62F02A680460127B8B4 /* NSString-UPCEAN.m */; };
 		F5E0C63202A680460127B8B4 /* NSString-UPCEAN.h in Headers */ = {isa = PBXBuildFile; fileRef = F5E0C63002A680460127B8B4 /* NSString-UPCEAN.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3F59A07E16CC1AE300BB1F33 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "~/Library/Frameworks";
+			dstSubfolderSpec = 0;
+			files = (
+				3F59A07F16CC1AF700BB1F33 /* BarcodeFramework.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -570,6 +584,7 @@
 				3F599FE616CC078000BB1F33 /* Frameworks */,
 				3F599FE716CC078000BB1F33 /* Headers */,
 				3F599FE816CC078000BB1F33 /* Resources */,
+				3F59A07E16CC1AE300BB1F33 /* CopyFiles */,
 			);
 			buildRules = (
 			);
